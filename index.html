@@ -26,12 +26,164 @@
     />
     <!--LINK DE CSS PROPIO-->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Aprendamos a Nadar</title>
+    <title>Todos podemos Nadar</title>
   </head>
   <body>
-    <h1>HOLA BUENOS DIAS</h1>
     <!--HEADER/CABECERA CON BOOTSTRAP-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="imgs/swim.png" alt="Logo" />
+        <a class="navbar-brand" href="#">Todos Podemos Nadar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--CONTENIDO INICIAL DE LA PAGINA-->
+    <main>
+      <section>
+        <div class="container-fluid p-5 text-center">
+          <h1>¡Aprendamos a Nadar Juntos!</h1>
+          <img
+            class="container__img"
+            src="imgs/aprendamos-juntos.jpeg"
+            alt="gente-nadando"
+          />
+          <h3>Los Diferentes Estilos Que Tiene La Natación</h3>
+        </div>
 
+        <div class="container-fluid mt-5">
+          <div class="row">
+            <div class="col-sm-6 col-xl-3">
+              <h4 class="text-center">Estilo Crol</h4>
+              <a
+                href="https://www.youtube.com/watch?v=VQxykkE2t-g"
+                target="_blank"
+              >
+                <img
+                  class="container__img"
+                  src="imgs/estilo-crol-natacion.jpeg"
+                  alt="estilo-crol-natacion"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <h4 class="text-center">Estilo Espalda</h4>
+              <a
+                href="https://www.youtube.com/watch?v=tbwFnGfh0X8"
+                target="_blank"
+              >
+                <img
+                  class="container__img"
+                  src="imgs/estilo-espalda-en-natacion.jpeg"
+                  alt="estilo-espalda-en-natacion"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <h4 class="text-center">Estilo Pecho</h4>
+              <a
+                href="https://www.youtube.com/watch?v=kcwwyFMIofs"
+                target="_blank"
+              >
+                <img
+                  class="container__img"
+                  src="imgs/estilo-pecho-natacion.jpeg"
+                  alt="estilo-espalda-en-natacion"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <h4 class="text-center">Estilo Mariposa</h4>
+              <a
+                href="https://www.youtube.com/watch?v=YlhXuC25_L4"
+                target="_blank"
+              >
+                <img
+                  class="container__img"
+                  src="imgs/estilo-mariposa-en-natacion-2.jpg"
+                  alt="estilo-mariposa-natacion"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER DE LA PÁGINA-->
+    <footer class="pie-de-pagina">
+      <div class="pie-de-pagina__grupo-1">
+        <div class="pie-de-pagina__box">
+          <figure>
+            <a href="#">
+              <img
+                class=".container__img"
+                src="imgs/swim 256 pixeles.png"
+                alt="Logo"
+              />
+            </a>
+          </figure>
+        </div>
+        <div class="pie-de-pagina__box">
+          <h2 class="pie-de-pagina__box__texto">SOBRE NOSOTROS</h2>
+          <p class="pie-de-pagina__box__parrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+            ipsum?
+          </p>
+          <p class="pie-de-pagina__box__parrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+            ipsum?
+          </p>
+        </div>
+        <div class="pie-de-pagina__box">
+          <h2 class="pie-de-pagina__box__texto">SEGUINOS EN NUESTRAS REDES</h2>
+          <div class="pie-de-pagina__redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="imgs/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="imgs/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com/home?lang=es" target="_blank">
+              <img src="imgs/twitter.png" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pie-de-pagina__grupo-2">
+        <small
+          >&copy; 2023 <b>Tadeo Sánchez</b> - Todos los Derechos
+          Reservados.</small
+        >
+      </div>
+    </footer>
     <!--LINK DE SCRIPT BOOTSTRAP-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

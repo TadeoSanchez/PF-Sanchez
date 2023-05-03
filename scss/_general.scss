@@ -1,22 +1,23 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
 body {
-  background: rgb(41, 159, 237);
-  background: linear-gradient(90deg, rgb(41, 159, 237) 10%, rgb(13, 198, 254) 50%, rgb(41, 159, 237) 90%);
+  background: $fondoColor;
+  background: linear-gradient(
+    90deg,
+    rgba(41, 159, 237, 1) 10%,
+    rgba(13, 198, 254, 1) 50%,
+    rgba(41, 159, 237, 1) 90%
+  );
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .nav__color {
-  background: rgb(207, 241, 255);
-  background: linear-gradient(180deg, rgb(207, 241, 255) 0%, rgb(169, 195, 255) 100%);
+  background: $colorNav;
+  background: linear-gradient(
+    180deg,
+    rgba(207, 241, 255, 1) 0%,
+    rgba(169, 195, 255, 1) 100%
+  );
   box-shadow: 0rem 0.125rem 0.625rem rgba(15, 15, 15, 0.5);
 }
 
@@ -25,7 +26,7 @@ body {
 }
 
 .nav__texto {
-  font-family: "Chivo Mono", monospace;
+  @include fonts("Chivo Mono", monospace);
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -111,9 +112,10 @@ body {
   background-color: #0d2033;
   text-align: center;
   transition: all 300ms ease;
-}
-.pie-de-pagina__redes-sociales a:hover {
-  color: aqua;
+
+  &:hover {
+    color: aqua;
+  }
 }
 
 .pie-de-pagina__grupo-2 {
@@ -126,14 +128,3 @@ body {
 .pie-de-pagina__grupo-2 small {
   font-size: 0.9375rem;
 }
-
-@media screen and (max-width: 992px) {
-  .pie-de-pagina__grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1.875rem;
-    padding: 2.1875rem 0rem;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */

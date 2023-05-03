@@ -1,0 +1,7 @@
+@mixin fonts($fuentes, $sans-serif) {
+  font-family: $fuentes, $sans-serif;
+}
+
+$fondoColor: rgb(41, 159, 237);
+
+$colorNav: rgb(207, 241, 255);

@@ -1,0 +1,9 @@
+@mixin fonts($fuentes, $sans-serif) {
+  font-family: $fuentes, $sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @include fonts("Montserrat", sans-serif);
+}

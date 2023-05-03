@@ -1,0 +1,8 @@
+@media screen and (max-width: 992px) {
+  .pie-de-pagina__grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.875rem;
+    padding: 2.1875rem 0rem;
+  }
+}

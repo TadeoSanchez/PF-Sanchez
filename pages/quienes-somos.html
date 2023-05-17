@@ -25,6 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;600;900&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap"
       rel="stylesheet"
     />
+    <!--LINK DE ANIMATE AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--LINK DE ANIMATE CSS-->
     <link
       rel="stylesheet"
@@ -98,7 +100,6 @@
     </header>
     <!--CONTENIDO DE LA PÁGINA-->
     <main>
-      <!--CENTRARLO-->
       <section class="quienes-somos">
         <div class="container-fluid mt-3 text-center">
           <h1
@@ -109,15 +110,19 @@
           <a href="#demo" class="btn btn-primary" data-bs-toggle="collapse"
             >Nosotros Somos...</a
           >
-          <div id="demo" class="collapse quienes-somos__texto">
+          <div id="demo" class="collapse quienes-somos__texto text-center">
             Somos un grupo de nadadores capacitados y especializados en el area
             de enseñaza, para quien quiera aprender a nadar, ya que es una
-            habilidad muy importante que tendríamos que aprender todos. Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Soluta eligendi
-            odio, sed molestias dicta eum suscipit quidem fuga nesciunt magnam.
+            habilidad muy importante que tendríamos que aprender todos. La idea
+            surgió porqué somos nadadores que se tomaron un descanso pero
+            queremos dedicarnos a la enseñanza de este deporte
           </div>
         </div>
-        <div class="container-fluid p-5 text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="container-fluid p-5 text-center"
+        >
           <img
             class="container__img"
             src="../imgs/natacion-quienes-somos.jpeg"
@@ -143,12 +148,8 @@
         <div class="pie-de-pagina__box">
           <h2 class="pie-de-pagina__box__texto">SOBRE NOSOTROS</h2>
           <p class="pie-de-pagina__box__parrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
-            ipsum?
-          </p>
-          <p class="pie-de-pagina__box__parrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
-            ipsum?
+            Somos un grupo de nadadores capacitados y especializados en el area
+            de enseñaza
           </p>
         </div>
         <div class="pie-de-pagina__box">
@@ -188,5 +189,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!--LINK DE SCRIPT AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

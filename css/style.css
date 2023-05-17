@@ -46,6 +46,12 @@ body {
   font-style: italic;
 }
 
+.box__quieneSomos {
+  border: solid 2px black;
+  height: 100%;
+  width: 40%;
+}
+
 .container__img {
   width: 75vw;
   max-width: 62.5rem;
@@ -75,6 +81,13 @@ body {
 .main__container__faqs iframe {
   width: 100%;
   margin: 1rem 0rem;
+}
+
+.animation__box {
+  transition: transform 500ms ease;
+}
+.animation__box:hover {
+  transform: scale(1.04);
 }
 
 .pie-de-pagina {
